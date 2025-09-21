@@ -226,7 +226,7 @@ const SignupPage: React.FC = () => {
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.8 }}>
               <label className="block text-white/80 mb-2">Field of Interest</label>
               <select {...register('interests')}
-                className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white focus:outline-none focus:border-cyan-400 transition-colors"
+                className="w-full px-4 py-3 bg-black border border-white/20 rounded-lg text-white focus:outline-none focus:border-cyan-400 transition-colors"
               >
                 <option value="">Select your interests</option>
                 {interests.map(i => <option key={i} value={i}>{i}</option>)}
